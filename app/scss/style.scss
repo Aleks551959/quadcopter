@@ -46,6 +46,15 @@
         &+.menu__list-item {
             padding-left: 20px;
         }
+        &.active a {
+            color: rgba(5, 5, 6, 0.792703);
+        }
+    }
+    &__list-phone {
+        display: none;
+    }
+    &__btn {
+        display: none;
     }
 }
 
