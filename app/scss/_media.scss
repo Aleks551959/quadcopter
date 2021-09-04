@@ -3,11 +3,6 @@
         font-size: 16px;
         line-height: 22px;
     }
-    .header {
-        background: rgba(0, 0, 0, 0.42);
-        padding: 25px 0;
-        top: 0;
-    }
     .top__title {
         font-size: 75px;
         line-height: 90px;
@@ -20,7 +15,7 @@
         margin: 15px 0 25px;
     }
     .title {
-        padding-top: 90px;
+        padding-top: 40px;
     }
     .products__slider-box {
         padding-top: 0;
@@ -33,15 +28,57 @@
     }
     .benefits {
         .title {
-            padding-top: 10px;
+            padding-top: 40px;
         }
     }
     .benefits__item {
-        margin-bottom: 80px;
+        margin-bottom: 50px;
+    }
+    .specification__box-2 {
+        margin-top: 115px;
+    }
+    .specification__box-4 {
+        margin-top: 115px;
+    }
+    .specification__item--center {
+        text-align: center;
+        margin-top: -55px;
+        img {
+            width: 80%;
+        }
+    }
+    .specification {
+        .title {
+            padding-top: 40px;
+        }
+    }
+    .questions {
+        .title {
+            padding-top: 40px;
+            margin-bottom: 20px;
+        }
+    }
+    .questions__item-title {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 16px 10px 16px 30px;
+    }
+    .questions__item-text {
+        padding: 0 5px 40px 30px;
+    }
+    .questions__item-title::after {
+        width: 60px;
+        height: 54px;
+        right: -60px;
     }
 }
 
 @media (max-width: 1280px) {
+    .header {
+        background: rgba(0, 0, 0, 0.42);
+        padding: 25px 0;
+        top: 0;
+    }
     .benefits__item {
         width: 45%;
     }
@@ -53,6 +90,21 @@
     }
     .benefits__item:nth-child(3)::after {
         width: 80%;
+    }
+}
+
+@media (max-width: 1160px) {
+    .specification__box-3::before {
+        top: 40px;
+        left: -230px;
+        width: 190px;
+        height: 78px;
+    }
+    .specification__box-2::before {
+        width: 310px;
+        height: 93px;
+        right: -238px;
+        top: -65px;
     }
 }
 
@@ -198,6 +250,12 @@
         line-height: 22px;
         top: -85px;
     }
+    .specification__box-1::before,
+    .specification__box-2::before,
+    .specification__box-3::before,
+    .specification__box-4::before {
+        display: none;
+    }
 }
 
 @media (max-width: 940px) {
@@ -215,6 +273,24 @@
     .products__slider-box {
         padding-bottom: 80px;
     }
+    .contacts__inner {
+        flex-wrap: wrap;
+    }
+    .contacts__form {
+        width: 100%;
+        margin-right: 0;
+        order: 1;
+    }
+}
+
+@media (max-width: 887px) {
+    .specification__box-4,
+    .specification__box-2 {
+        margin-top: 50px;
+    }
+    .specification__inner {
+        padding-left: 0;
+    }
 }
 
 @media (max-width: 787px) {
@@ -229,6 +305,29 @@
     }
     .benefits__info {
         width: 100%;
+    }
+    .specification__inner {
+        display: block;
+        padding-left: 0;
+    }
+    .specification__box {
+        width: 100%;
+    }
+    .specification__box-4,
+    .specification__box-2 {
+        margin-top: 25px;
+    }
+    .specification__item--center {
+        margin-top: 0;
+    }
+    .questions__items {
+        padding-right: 60px;
+    }
+    .questions__item-text {
+        padding: 0 15px 40px 30px;
+    }
+    .contacts__inner {
+        padding-left: 2px;
     }
 }
 
@@ -274,8 +373,51 @@
     .scroll__btn {
         padding: 13px 0 13px;
     }
+    .benefits .title {
+        padding-top: 30px;
+    }
     .benefits__item {
         display: block;
+    }
+    .benefits__num {
+        display: none;
+    }
+    .benefits__img {
+        padding: 20px 0;
+        img {
+            display: block;
+            margin-left: auto;
+        }
+    }
+    .benefits__img::before {
+        top: 8px;
+    }
+}
+
+@media (max-width: 414px) {
+    .questions__items {
+        padding-right: 0;
+    }
+    .questions__item-title::after {
+        right: 0;
+    }
+    .questions__item-title {
+        padding: 15px 75px 15px 15px;
+    }
+    .contacts__form-line {
+        display: block;
+    }
+    .contacts__form-input {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contacts__social-list {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
     }
 }
 
